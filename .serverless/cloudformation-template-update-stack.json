@@ -167,7 +167,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/template-serverless-service/dev/1672756051710-2023-01-03T14:27:31.710Z/template-serverless-service.zip"
+          "S3Key": "serverless/template-serverless-service/dev/1672805343048-2023-01-04T04:09:03.048Z/template-serverless-service.zip"
         },
         "Handler": "public/index.php",
         "Runtime": "provided.al2",
@@ -181,7 +181,7 @@
           ]
         },
         "Layers": [
-          "arn:aws:lambda:ap-southeast-1:209497400698:layer:php-80-fpm:53"
+          "arn:aws:lambda:ap-southeast-1:209497400698:layer:php-81-fpm:39"
         ]
       },
       "DependsOn": [
@@ -195,7 +195,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/template-serverless-service/dev/1672756051710-2023-01-03T14:27:31.710Z/template-serverless-service.zip"
+          "S3Key": "serverless/template-serverless-service/dev/1672805343048-2023-01-04T04:09:03.048Z/template-serverless-service.zip"
         },
         "Handler": "artisan",
         "Runtime": "provided.al2",
@@ -209,7 +209,7 @@
           ]
         },
         "Layers": [
-          "arn:aws:lambda:ap-southeast-1:209497400698:layer:php-80:53",
+          "arn:aws:lambda:ap-southeast-1:209497400698:layer:php-81:39",
           "arn:aws:lambda:ap-southeast-1:209497400698:layer:console:78"
         ]
       },
@@ -217,24 +217,24 @@
         "ArtisanLogGroup"
       ]
     },
-    "WebLambdaVersionZeAClY0AYwNrfrDup7LpK9vXmtpBa9OLTQUkqeC58xg": {
+    "WebLambdaVersiondijI4pNUQYJMO0Nkw6YKiOUpHgMz1aFqiD9dIeIuM8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "WebLambdaFunction"
         },
-        "CodeSha256": "kAI9xPthh2ec5Qyqbhnxggi71mzEgPMawBdKj7uU7Ww="
+        "CodeSha256": "TltELsZcDlDn9Fh5V2QS9OydrOyS8HC4KU6T/crlVPU="
       }
     },
-    "ArtisanLambdaVersionpV936OlOXVe0yafSmbEWAXDJMtVH3mpiDwiMrRMBB0": {
+    "ArtisanLambdaVersionHqKYClr2xoxm3q1PXFweaT9vZkSbvbWx2tcS0awJA8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ArtisanLambdaFunction"
         },
-        "CodeSha256": "kAI9xPthh2ec5Qyqbhnxggi71mzEgPMawBdKj7uU7Ww="
+        "CodeSha256": "TltELsZcDlDn9Fh5V2QS9OydrOyS8HC4KU6T/crlVPU="
       }
     },
     "ApiGatewayRestApi": {
@@ -359,7 +359,7 @@
         "WebLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1672756043775": {
+    "ApiGatewayDeployment1672805336247": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -422,7 +422,7 @@
     "WebLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "WebLambdaVersionZeAClY0AYwNrfrDup7LpK9vXmtpBa9OLTQUkqeC58xg"
+        "Ref": "WebLambdaVersiondijI4pNUQYJMO0Nkw6YKiOUpHgMz1aFqiD9dIeIuM8"
       },
       "Export": {
         "Name": "sls-template-serverless-service-dev-WebLambdaFunctionQualifiedArn"
@@ -431,7 +431,7 @@
     "ArtisanLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ArtisanLambdaVersionpV936OlOXVe0yafSmbEWAXDJMtVH3mpiDwiMrRMBB0"
+        "Ref": "ArtisanLambdaVersionHqKYClr2xoxm3q1PXFweaT9vZkSbvbWx2tcS0awJA8"
       },
       "Export": {
         "Name": "sls-template-serverless-service-dev-ArtisanLambdaFunctionQualifiedArn"

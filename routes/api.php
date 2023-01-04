@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ServerlessController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\HttpFoundation\ServerBag;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::get('/cool', function (Request $request) {
+    return "hello";
 });
